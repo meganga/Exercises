@@ -1,17 +1,17 @@
-const isItName = require('../isItName');
+const isItName = require("../isItName");
 
-test('Testing empty string', () => {
+test("Testing empty string", () => {
   expect(isItName("")).toStrictEqual("Ola Universe");
 });
 
-test('Testing null value', () => {
+test("Testing null value", () => {
   expect(isItName()).toStrictEqual("Ola Universe");
 });
 
-test('Testing empty space', () => {
+test("Testing empty space", () => {
   expect(isItName(" ")).toStrictEqual("Ola  ");
 });
 
-test('Testing a string with characters', () => {
+test("Testing a string with characters", () => {
   expect(isItName("David")).toStrictEqual("Ola David");
 });
